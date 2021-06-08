@@ -144,11 +144,10 @@ class BipedalWalkerContinuous(gym.Env, EzPickle):
         self.torque_penalty = 0.00035
 
         # Initialize with dummy values so first reset runs successfully for
-        # 'stump tracks' or 'hexagon tracks'. 
+        # 'stump tracks'
         self.set_environment(
             stump_height=3,
             obstacle_spacing=6,
-            poly_shape=12,
         )
 
     # Use this init to initialize the environment configurations
